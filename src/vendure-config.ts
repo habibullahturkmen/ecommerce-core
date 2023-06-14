@@ -4,7 +4,7 @@ import {
     DefaultSearchPlugin,
     VendureConfig,
 } from '@vendure/core';
-import { HardenPlugin } from '@vendure/harden-plugin';
+// import { HardenPlugin } from '@vendure/harden-plugin';
 import { defaultEmailHandlers, EmailPlugin } from '@vendure/email-plugin';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
@@ -92,10 +92,10 @@ export const config: VendureConfig = {
             route: 'admin',
             port: 3002,
         }),
-        HardenPlugin.init({
-            maxQueryComplexity: 650,
-            logComplexityScore: true,
-            apiMode: IS_DEV ? 'dev' : 'prod',
-        }),
+        // HardenPlugin.init({
+        //     maxQueryComplexity: 650,
+        //     logComplexityScore: true,
+        //     apiMode: IS_DEV ? 'dev' : 'prod',
+        // }),
     ],
 };
