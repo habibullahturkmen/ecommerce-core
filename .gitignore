@@ -4,3 +4,5 @@ static/assets
 static/email/test-emails
 
 .env
+
+.idea
